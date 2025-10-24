@@ -154,64 +154,108 @@ h1 {
 .badge {
     margin: 5px;
 }
-
-/* --------------Proyectos------------ */
+/* ----------------- Proyectos ----------------- */
 
 .proyectos-recientes {
-    padding: 40px;
-}
-
-.proyectos-recientes img {
-    height: 80%;
-    width: 90%;
-    padding: 5px;
-    border-radius: 20px;
-    display: block;
-    transition: all 0.2s ease;
-}
-
-.proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-}
-
-.overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; /* centra el botón */
+  box-sizing: border-box;
 }
 
 .proyecto {
-    position: relative;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-top: 75%; /* altura de los proyectos, puedes aumentar a 85% para más grandes */
+  background-color: #f0f0f0;
+  transition: transform 0.2s ease;
 }
 
-.proyecto:hover img {
-    opacity: 0.2;
+.proyecto img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 
 .proyecto:hover .overlay {
-    opacity: 1;
+  opacity: 1;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .overlay .iconos-contenedor {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .overlay i {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
+  color: black;
+  font-size: 30px;
+  margin: 0 5px;
 }
+
+/* Botón debajo de la cuadrícula */
+.proyectos-recientes .btn {
+  margin-top: 30px;
+  display: inline-block; /* para que no ocupe todo el ancho */
+}
+
+/* Ajuste de imagen dentro del proyecto */
+.proyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Hover opcional: oscurece imagen al pasar */
+.proyecto:hover img {
+  opacity: 0.3;
+}
+
+/* Responsividad */
+@media screen and (max-width: 1024px) {
+  .proyectos-contenedor {
+    grid-template-columns: repeat(2, 1fr); /* 2 por fila en tablets */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .proyectos-contenedor {
+    grid-template-columns: 1fr; /* 1 por fila en móviles */
+  }
+}
+
+
 
 /* --------------Articulos----------------- */
 
