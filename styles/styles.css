@@ -9,7 +9,8 @@ section {
 
 h1 {
     font-size: 2.5rem;
-    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .descripcion {
     font-family: 'Inter', sans-serif;
@@ -64,11 +65,13 @@ h1 {
 .navbar {
     padding: 2rem;
     background-color: #6aaae9;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -87,14 +90,14 @@ h1 {
 .hero-imagen-desarrollador {
     width: 250px;
     height: 250px;
-    /* en la clase rounded-circle */
+    
     border-radius: 50%;  */
     margin: 20px;
 }
 
 .hero-principal h2 {
     font-size: 1.5rem;
-    color: #615151;
+    color: #070707;
 }
 
 /* ------------Sobre mi------------ */
@@ -133,7 +136,7 @@ h1 {
 
 .experiencia i {
     font-size: 2.5rem;
-    color: #7ade30;
+    color: #00c6ff;
     background-color: #0a0a23;
     padding: 8px 19px;
     border-radius: 50%;
