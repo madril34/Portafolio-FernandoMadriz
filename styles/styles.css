@@ -163,7 +163,7 @@ h1 {
   padding: 40px 20px;
   width: 100%;
   margin: 0 auto;
-  text-align: center; /* centra el botón */
+  text-align: center; 
   box-sizing: border-box;
 }
 
@@ -172,7 +172,7 @@ h1 {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
-  padding-top: 75%; /* altura de los proyectos, puedes aumentar a 85% para más grandes */
+  padding-top: 75%; 
   background-color: #f0f0f0;
   transition: transform 0.2s ease;
 }
@@ -277,7 +277,7 @@ h1 {
     font-weight: bold;
 }
 
-/* ------------******CARRUSEL .proyecto.oTestimonios******--------------- */
+/* ------------******CARRUSEL .proyecto.Testimonios******--------------- */
 
 .testimonios {
     padding: 40px 40px 80px 40px;
@@ -445,8 +445,10 @@ footer {
 }
 
 i {
-    font-size: 100px;
-    color: red
+    font-size: 25px;
+    
+    color: rgb(15, 15, 15)
+    
 }
 
 /* Adaptable (Responsivo) */
