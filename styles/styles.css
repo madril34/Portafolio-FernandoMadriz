@@ -221,16 +221,28 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: rgb(14, 13, 13);
   font-size: 30px;
   margin: 0 5px;
 }
 
 /* Botón debajo de la cuadrícula */
 .proyectos-recientes .btn {
-  margin-top: 30px;
-  display: inline-block; /* para que no ocupe todo el ancho */
+        font-size: 1.2em;
+        color: white;
+        background-color:  rgb(13, 110, 253);
+        vertical-align: middle;
+        margin-left: 8px;
+        transition: transform 0.2s ease;
+        box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+        font-family: 'Poppins', sans-serif; 
 }
+.proyectos-recientes .btn:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 123, 255);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+}
+
 
 /* Ajuste de imagen dentro del proyecto */
 .proyecto img {
@@ -240,7 +252,7 @@ h1 {
   border-radius: 15px;
 }
 
-/* Hover opcional: oscurece imagen al pasar */
+/* oscurece imagen al pasar */
 .proyecto:hover img {
   opacity: 0.3;
 }
@@ -254,30 +266,12 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .proyectos-contenedor {
-    grid-template-columns: 1fr; /* 1 por fila en móviles */
+    grid-template-columns: 1fr; /* 1 por fila en celulares */
   }
 }
 
 
-
-/* --------------Articulos----------------- */
-
-.articulos {
-    min-height: 500px;
-    padding: 30px;
-}
-
-.articulos .card {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px;
-}
-
-.articulos .card-header {
-    font-weight: bold;
-}
-
-/* ------------******CARRUSEL .proyecto.Testimonios******--------------- */
+/* ------------CARRUSEL --------------- */
 
 .testimonios {
     padding: 40px 40px 80px 40px;
@@ -310,7 +304,7 @@ h1 {
     max-width: 70%;
     font-size: 20px;
     text-align: center;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: ''Poppins', sans-serif';
 }
 
 .testimonio-info {
@@ -328,10 +322,18 @@ h1 {
 
 .testimonio-info .cargo {
     font-size: 0.9rem;
-    color: #656060;
+    color: #007bff
 }
 
 /* ------------Contacto------------ */
+
+.contacto .seccion-titulo {
+  font-weight: 800;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ffffff, #aee4ff, #6ecbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .contacto .container {
     max-width: 1100px;
@@ -340,10 +342,11 @@ h1 {
 }
 
 .contacto .rectangulo {
-    margin-top: -5rem;
-    background-color: rgb(13, 110, 253);
-    border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px white;
+   margin-top: -5rem;
+  background-color: rgb(13, 110, 253); 
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25); 
+  padding: 2rem;
 }
 
 .contacto .row {
@@ -352,9 +355,13 @@ h1 {
     align-items: center;
 }
 
+
+
 .contacto .descripcion {
-    color: white;
-    font-size: 1.2rem;
+    color: #e9f2ff;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: Poppins', sans-serif;
 }
 
 .contacto button {
@@ -402,7 +409,7 @@ footer {
     font-size: 1.5rem;
     padding: 20px;
     margin-bottom: 30px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Poppins', sans-serif;
 }
 
 .iconos-redes-sociales a {
@@ -446,9 +453,12 @@ footer {
 
 i {
     font-size: 25px;
+    color: white;
     
-    color: rgb(15, 15, 15)
-    
+}
+i:hover {
+    transform: translateX(4px);
+
 }
 
 /* Adaptable (Responsivo) */
